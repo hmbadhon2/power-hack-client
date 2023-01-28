@@ -19,7 +19,8 @@ const BillingHeader = () => {
 				</span>
 				<input type="search" name="Search" placeholder="Search..." className="w-32 py-2 pl-10 text-sm rounded-md sm:w-auto focus:outline-none bg-gray-100 text-gray-900 focus:bg-gray-100" />
 			</div>
-			<button type="button" className="hidden px-6 py-2 font-semibold rounded lg:block bg-violet-400 text-gray-100"> Add New Bill</button>
+			<label htmlFor="Bill-modal" type="button" className="hidden px-6 py-2 font-semibold rounded lg:block bg-violet-400 text-gray-100"> New Bill</label>
+            
 		</div>
 		
 	</div>

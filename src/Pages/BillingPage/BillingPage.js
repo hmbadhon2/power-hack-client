@@ -1,9 +1,10 @@
 import React from 'react';
-import BillingHeader from './BillingHeader';
+import BillingModal from './BillingModal';
 
 const BillingPage = () => {
     return (
         <div>
+            <BillingModal/>
             
             <div>
 	
