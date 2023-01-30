@@ -18,7 +18,7 @@ const BillingPage = ({updateBill,setUpdateBill}) => {
 
     const { data:billings=[],refetch } = useQuery({
         queryKey:['billings'],
-        queryFn:()=>fetch('http://localhost:5000/billing-list')
+        queryFn:()=>fetch('https://power-hack-server-jade.vercel.app/billing-list')
         .then(res => res.json())
         .then(data => {
 			
@@ -31,7 +31,7 @@ const BillingPage = ({updateBill,setUpdateBill}) => {
 	
 
 	const handledeletingBill = bill =>{
-		fetch(`http://localhost:5000/delete-billing/${bill._id}`,{
+		fetch(`https://power-hack-server-jade.vercel.app/delete-billing/${bill._id}`,{
 			method:'DELETE',
 		})
 		.then(res=>res.json())

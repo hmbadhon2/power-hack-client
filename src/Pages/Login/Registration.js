@@ -17,7 +17,7 @@ const Registration = () => {
           email:data.email,
           password:data.password
         }
-        fetch('http://localhost:5000/registration',{
+        fetch('https://power-hack-server-jade.vercel.app/registration',{
           method:'POST',
           headers:{
             'content-type':'application/json'

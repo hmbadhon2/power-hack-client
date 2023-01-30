@@ -9,7 +9,7 @@ console.log(billId)
 
 // const {data:updateBill=[]} = useQuery({
 //   queryKey:['updateBill'],
-//   queryFn:()=> fetch(`http://localhost:5000/billing-list/${billId}`)
+//   queryFn:()=> fetch(`https://power-hack-server-jade.vercel.app/billing-list/${billId}`)
 //   .then(res => res.json())
 //   .then(data=>{
 //     console.log(data)
@@ -24,7 +24,7 @@ console.log(billId)
         amount:data.amount
     }
     console.log(billing);
-    fetch('http://localhost:5000/add-billing',{
+    fetch('https://power-hack-server-jade.vercel.app/add-billing',{
        method:'POST',
        headers:{
         'content-type':'application/json'
