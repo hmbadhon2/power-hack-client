@@ -1,10 +1,10 @@
-import { Children } from "react";
+
 import { createBrowserRouter } from "react-router-dom";
-import BillingPage from "../../BillingPage/BillingPage";
 import MainBillingPage from "../../BillingPage/MainBillingPage";
-import Home from "../../Home/Home";
 import Main from "../../Layout/Main";
+import Registration from "../../Login/Registration";
 import ErrorPage from "../../Shared/ErrorPage/ErrorPage";
+import Login from "../../Login/Login"
 
 export const router = createBrowserRouter([
     {
@@ -12,17 +12,23 @@ export const router = createBrowserRouter([
         element:<Main></Main>,
         errorElement:<ErrorPage/>,
         children:[
+            
+    
             {
                 path:'/',
-                element:<Home></Home>
-            },
-            {
-                path:'/',
-                element:<Home></Home>
+                element:<MainBillingPage/>
             },
             {
                 path:'/billing-page',
                 element:<MainBillingPage/>
+            },
+            {
+                path:'/login',
+                element:<Login/>
+            },
+            {
+                path:'/registration',
+                element:<Registration/>
             },
         ]
 
